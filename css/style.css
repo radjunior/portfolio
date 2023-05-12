@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #f6f6f6;
+    --preto-2: #f2f2f2;
+    --azul: #22d4fd;
+    --preto: #000;
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu a {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 4.6% 15%;
+    display: flex;
+    align-items: center;
+    gap: 82px;
+    justify-content: space-between;
+}
+
+.apresentacao_conteudo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-family: var(--font-secundaria);
+    font-size: 2.25rem;
+}
+
+.titulo_destaque {
+    color: var(--azul);
+}
+
+.apresentacao_conteudo_paragrafo {
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+}
+
+.apresentacao_perfil {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.apresentacao_conteudo_botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao_conteudo_botoes a {
+    font-family: var(--font-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--azul);
+    color: var(--branco);
+    border-radius: 8px;
+    width: 50%;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.apresentacao_conteudo_botoes a:hover {
+    transition: 500ms;
+    background-color: var(--branco);
+    color: var(--preto);
+    border: 2px solid var(--branco);
+}
+
+.apresentacao_conteudo_botoes h2 {
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.rodape {
+    background-color: var(--azul);
+    color: var(--preto);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
+    }
+}
